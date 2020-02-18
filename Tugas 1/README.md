@@ -3,7 +3,7 @@
 ### 05111740000055
 
 # Business Understanding
- * Item 1
+ 1. A
 # Data Understanding
   Saya Menggunakan Dataset dari https://www.kaggle.com/leonardopena/top-spotify-songs-from-20102019-by-year yang mempunyai 603 baris data dan mempunyai 15 kolom, berikut penjelasan untuk setiap kolomnya
   - ID -> ID dari setiap baris data
