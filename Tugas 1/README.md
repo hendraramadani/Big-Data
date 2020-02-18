@@ -44,6 +44,14 @@
     
      ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%201/Dokumentasi/FULL%20MODEL.PNG)
      
+  * Membaca Dataset dari DB Selector
+    
+    ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%201/Dokumentasi/DB%20Selector.PNG)
+    
+  * Membaca Dataset dari CSV Reader
+  
+    ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%201/Dokumentasi/csv%20reader.PNG)
+     
   * Jadi Untuk Membaca Dataset yang sudah saya split, saya menggunakan 5 database reader dan 5 csv reader
   
     ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%201/Dokumentasi/CSV_DB_FULL.png)
