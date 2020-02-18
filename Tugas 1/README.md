@@ -24,3 +24,5 @@
 # Modeling
 # Evaluation
 # Deployment
+  Untuk Mengenerate hasil ke CSV dan Database saya menggunakan CSV Writer dan DB Writer
+  ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%201/Dokumentasi/CSV_DB_deployment.PNG)
