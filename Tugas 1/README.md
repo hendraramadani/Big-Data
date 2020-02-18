@@ -40,6 +40,11 @@
   ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%201/Dokumentasi/DB%20import.PNG)
   
 # Modeling
+  * Full Model Dalam Knime
+    
+     ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%201/Dokumentasi/FULL%20MODEL.PNG)
+  
+  
 # Evaluation
 # Deployment
   Untuk Mengenerate hasil ke CSV dan Database saya menggunakan CSV Writer dan DB Writer
