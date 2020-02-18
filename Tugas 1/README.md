@@ -60,6 +60,15 @@
     ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%201/Dokumentasi/concatenate.PNG)
   
 # Evaluation
+  Karena Ada Beberapa data sang setelah digabung terdapat yang NULL, dan tidak dapat untuk di export ke CSV Writer ataupun DB Writer maka saya mengatasinya dengan menggunakan Beberapa Filter sebagai Berikut
+  
+  ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%201/Dokumentasi/Filter.PNG)
+  
+  Dan Untuk Hasilnya Kurang Lebih Seperti Gambar Berikut
+  
+  ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%201/Dokumentasi/Hasil%20Filter.PNG)
+  
+  
 # Deployment
   Untuk Mengenerate hasil ke CSV dan Database saya menggunakan CSV Writer dan DB Writer
   
