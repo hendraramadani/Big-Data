@@ -43,7 +43,25 @@
   * Full Model Dalam Knime
     
      ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%201/Dokumentasi/FULL%20MODEL.PNG)
+     
+  * Jadi Untuk Membaca Dataset yang sudah saya split, saya menggunakan 5 database reader dan 5 csv reader
   
+    ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%201/Dokumentasi/CSV_DB_FULL.png)
+    
+    Keterangan:
+    A. DB Reader : Dataset Top Chart Spotify 2010
+       CSV Reader : Dataset Top Chart Spotify 2011
+    B. DB Reader : Dataset Top Chart Spotify 2012
+       CSV Reader : Dataset Top Chart Spotify 2013
+    C. DB Reader : Dataset Top Chart Spotify 2014
+       CSV Reader : Dataset Top Chart Spotify 2015
+    D. DB Reader : Dataset Top Chart Spotify 2016
+       CSV Reader : Dataset Top Chart Spotify 2017
+    E. DB Reader : Dataset Top Chart Spotify 2018
+       CSV Reader : Dataset Top Chart Spotify 2019
+       
+  * Untuk Menggabungkan Semua data Saya Menggunakan Concatenate
+    ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%201/Dokumentasi/concatenate.PNG)
   
 # Evaluation
 # Deployment
