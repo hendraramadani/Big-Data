@@ -56,6 +56,7 @@
     * E. DB Reader : Dataset Top Chart Spotify 2018, CSV Reader : Dataset Top Chart Spotify 2019
        
   * Untuk Menggabungkan Semua data Saya Menggunakan Concatenate
+  
     ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%201/Dokumentasi/concatenate.PNG)
   
 # Evaluation
