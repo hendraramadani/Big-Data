@@ -88,3 +88,7 @@
   ### Hasil Deployment Database
   
   ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%201/Dokumentasi/DB_Result.PNG)
+  
+  
+  
+*Note : Tugas ini saya kerjakan dengan penngetahuan dan kemampuan saya sendiri
