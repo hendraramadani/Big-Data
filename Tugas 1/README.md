@@ -8,18 +8,18 @@
   - ID -> ID dari setiap baris data
   - Title -> Judul dari lagu
   - Artist -> Penanyi Lagu
-  - Top Genre ->
-  - Year
-  - bpm
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
+  - Top Genre -> Genre Lagu
+  - Year -> Tahun lagu dibuat
+  - bpm -> Beats per menit dari lagu 
+  - nrgy -> Tkat untuk menunjukkan sebuah lagu energik
+  - dnce -> Tingkat untuk kemudahan dibawa menari
+  - dB -> Tingkat Kekerasan lagu / Loud
+  - live -> Menunjukan kualitas Live record
+  - val -> Tingkat suasana yang dibawakan lagu
+  - dur -> Panjang durasi lagu
+  - acus -> tingkat akustik dalam lagu
+  - spch -> Kemudahan untuk dinyanyikan
+  - pop-> Popularitas dari Lagu tersebut
 # Data Preparation
 # Modeling
 # Evaluation
