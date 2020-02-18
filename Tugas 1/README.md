@@ -3,6 +3,7 @@
 ### 05111740000055
 
 # Business Understanding
+ 1. A
 # Data Understanding
   Saya Menggunakan Dataset dari https://www.kaggle.com/leonardopena/top-spotify-songs-from-20102019-by-year yang mempunyai 603 baris data dan mempunyai 15 kolom, berikut penjelasan untuk setiap kolomnya
   - ID -> ID dari setiap baris data
@@ -24,3 +25,13 @@
 # Modeling
 # Evaluation
 # Deployment
+  Untuk Mengenerate hasil ke CSV dan Database saya menggunakan CSV Writer dan DB Writer
+  
+  ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%201/Dokumentasi/CSV_DB_deployment.PNG)
+  ### Hasil Deplyoment CSV
+  
+  ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%201/Dokumentasi/CSV_Result.PNG)
+  
+  ### Hasil Deployment Database
+  
+  ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%201/Dokumentasi/DB_Result.PNG)
