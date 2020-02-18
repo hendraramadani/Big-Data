@@ -3,7 +3,7 @@
 ### 05111740000055
 
 # Business Understanding
- 1. Genre Paling populer 
+ 1. Genre Paling populer dari tahun ke tahun, dan bisa untuk memprediksi genre yang akan populer di tahaun yang akan datang
     
     ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%201/Dokumentasi/Genre_segmen.PNG)
     
