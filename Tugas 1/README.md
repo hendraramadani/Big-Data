@@ -3,12 +3,12 @@
 ### 05111740000055
 
 # Business Understanding
- 1. Genre Paling populer 
+ 1. Genre Paling populer dari tahun ke tahun, dan bisa untuk memprediksi genre yang akan populer di tahaun yang akan datang
     
     ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%201/Dokumentasi/Genre_segmen.PNG)
     
- 2. Penanyi yang Sering Masuk Top Chart
- 3. 
+ 2. Penanyi yang Sering Masuk Top Chart, dan Memungkinkan untuk masuk Top Chart di tahun selanjutnya
+ 3. Bisa Untuk memprediksi Karakteristik lagu yang lagi trending dan yang akan trending
 # Data Understanding
   Saya Menggunakan Dataset dari https://www.kaggle.com/leonardopena/top-spotify-songs-from-20102019-by-year yang mempunyai 603 baris data dan mempunyai 15 kolom, berikut penjelasan untuk setiap kolomnya
   - ID -> ID dari setiap baris data
@@ -88,3 +88,7 @@
   ### Hasil Deployment Database
   
   ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%201/Dokumentasi/DB_Result.PNG)
+  
+  
+  
+*Note : Tugas ini saya kerjakan dengan penngetahuan dan kemampuan saya sendiri
