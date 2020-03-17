@@ -2,7 +2,7 @@
   
   Deskripsi:
   
-  ![enter image description here](Dokumentasi/0_deskripsi.PNG
+  ![enter image description here](Dokumentasi/0_deskripsi.PNG)
   
   ![enter image description here](Dokumentasi/1_workflow.PNG)
   
