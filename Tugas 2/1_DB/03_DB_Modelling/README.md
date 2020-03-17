@@ -4,6 +4,8 @@
   
   ![enter image description here](Dokumentasi/0_deskripsi.PNG)
   
+  ![enter image description here](Dokumentasi/1_workflow.PNG)
+  
   ![enter image description here](Dokumentasi/data_preparation.PNG)
   
   ![enter image description here](Dokumentasi/db_select.PNG)
