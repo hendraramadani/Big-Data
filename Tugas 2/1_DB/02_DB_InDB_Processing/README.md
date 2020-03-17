@@ -11,12 +11,20 @@
   ![enter image description here](Dokumentasi/1_workflow.PNG)
   
 ## Preparation
+
+  Untuk persiapan data yang akan kita gunanakan, menggunakan 2 table selector yang pertama untuk table 05111740000055_ss13hme dan table 05111740000055_ss13pme
   
   ![enter image description here](Dokumentasi/2_preparation.PNG)
   
+  Konfigurasi untuk table selector 05111740000055_ss13hme
+  
   ![enter image description here](Dokumentasi/3_preparation_hme.PNG)
   
+  Konfigurasi untuk table selector 05111740000055_ss13pme
+  
   ![enter image description here](Dokumentasi/4_preparation_pme.PNG)
+  
+## Problem 1 : join ss13hme and ss13pme on SERIALNO. Remove all columns named PUMA* and PWGTP* from both tables.
   
   ![enter image description here](Dokumentasi/5_problem1.png)
   
