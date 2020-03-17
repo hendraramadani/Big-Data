@@ -24,7 +24,7 @@
   
   ![enter image description here](Dokumentasi/4_preparation_pme.PNG)
   
-### Problem 1 : join ss13hme and ss13pme on SERIALNO. Remove all columns named PUMA* and PWGTP* from both tables.
+## Problem 1 : join ss13hme and ss13pme on SERIALNO. Remove all columns named PUMA* and PWGTP* from both tables.
 
   Untuk workflownya kurang lebih seperti itu
   
@@ -42,7 +42,7 @@
   
   ![enter image description here](Dokumentasi/8_problem1_result.PNG)
   
-### Problem 2 : filter all rows from ss13pme where COW is NULL.
+## Problem 2 : filter all rows from ss13pme where COW is NULL.
 
   Workflownya kurag lebih seperti ini
   
@@ -56,7 +56,7 @@
   
   ![enter image description here](Dokumentasi/11_result_problem2.PNG)
   
-### Problem 3 : filter all rows from ss13pme where COW is NOT NULL.
+## Problem 3 : filter all rows from ss13pme where COW is NOT NULL.
 
   Workflow nya kurang lebih seperti ini
   
@@ -70,7 +70,7 @@
   
   ![enter image description here](Dokumentasi/14_result_problem3.PNG)
   
-### Problem 4 : calculate average AGEP for the different SEX groups.
+## Problem 4 : calculate average AGEP for the different SEX groups.
 
   Kurang Lebih workflownya seperti ini
   
@@ -88,7 +88,7 @@
   
   ![enter image description here](Dokumentasi/18_result_problem4.PNG)
   
-### Problem 5 : Optional. Sort the data rows by descending AGEP and extract top 10 only. Hint: Use LIMIT to restrict the number of rows returned by the db.
+## Problem 5 : Optional. Sort the data rows by descending AGEP and extract top 10 only. Hint: Use LIMIT to restrict the number of rows returned by the db.
 
   Kurang Lebih workflownya seperti ini
   
