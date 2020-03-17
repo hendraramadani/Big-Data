@@ -2,9 +2,15 @@
   
   Deskripsi:
   
+  Terdapat 5 problem yang harus dikerjakan dalam satu workflow
+  
   ![enter image description here](Dokumentasi/0_deskripsi.PNG)
   
+  Kurang lebih workflow utamanya seperti ini
+  
   ![enter image description here](Dokumentasi/1_workflow.PNG)
+  
+### Preparation
   
   ![enter image description here](Dokumentasi/2_preparation.PNG)
   
