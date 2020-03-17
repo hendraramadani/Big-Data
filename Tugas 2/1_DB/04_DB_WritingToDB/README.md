@@ -48,7 +48,7 @@
   
   ![enter image description here](Dokumentasi/11_model_dbwriter.PNG)
   
-  Hasil dapat kita lihat dengan Mengwuery table 05111740000055_model dalam Dbeaver
+  Hasil dapat kita lihat dengan Mengquery table 05111740000055_model dalam Dbeaver
   
   ![enter image description here](Dokumentasi/result_model_dbwriter.PNG)
   
