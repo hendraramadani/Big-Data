@@ -18,6 +18,6 @@
   
   ![enter image description here](Dokumentasi/7_db_loader_setting.PNG)
   
-  ![enter image description here](Dokumentasi/8_dbeaver_result.PNG
+  ![enter image description here](Dokumentasi/8_dbeaver_result.PNG)
   
   
