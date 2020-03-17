@@ -50,7 +50,7 @@
   
   Hasil dapat kita lihat dengan Mengwuery table 05111740000055_model dalam Dbeaver
   
-  ![enter image description here](Dokumentasi/result_model_dbwriter.PNG
+  ![enter image description here](Dokumentasi/result_model_dbwriter.PNG)
   
   Output dari Decision Tree Predictor Kita Masukkan kedalam DB update, dengan harapan data prediksi dari decision tree dapat kita masukkan ke dalam colom Cow dengan mengupdate datanya
   
