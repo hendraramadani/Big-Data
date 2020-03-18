@@ -28,7 +28,7 @@
 
   Kita tambahkan 2 Row Filter, untuk memfilter Row COW is NULL dan COW is Not NULL
   
-  ![enter image description here](Dokumentasi/cow_filter.PNG)
+  ![enter image description here](Dokumentasi/5_cow_filter.PNG)
   
   Konfigurasi dari Row FIlter Untuk Cow is NOT NULL
   
