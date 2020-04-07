@@ -39,17 +39,17 @@ Selanjutnya kita akan meminta user memberikan rating kepada 20 film random yang 
 - -1 = film belum ditonton
 - 0 - 5 = film jelek - film bagus
 
-![Knime Workflow](Dokumentasi/2/askuser.png)
+![Knime Workflow](Dokumentasi/2/askuser.PNG)
 
 Jika user memberikan nilai -1 maka kita tidak akan menggunakan data untuk keperluan training rekomendasi.
 
-![Knime Workflow](Dokumentasi/2/workflowaskuser.png)
+![Knime Workflow](Dokumentasi/2/workflowaskuser.PNG)
 
 
 ### - Modelling
 Pada tahap ini kita akan membuat modeling yang akan digunakan sebagai dasar rekomendasi. Collaborative Filtering diimplementasikan dalam node Spark Collaborative Filtering Learner. Node menerima input jumlah data, dan fitur-fitur dalam datanya. Dan menghasilkan output model rekomendasi dan prediksi rating untuk semua baris data input. Dataset akan dipecah menjadi data tes dan data training, dimana data training akan digunakan untuk membangun rekomendasi dengan node Spark Collaborative Filtering Learner.
 
-![Knime Workflow](Dokumentasi/2/modelling.png)
+![Knime Workflow](Dokumentasi/2/modelling.PNG)
 
 Langkah - langkah modelling :
 1. Create Local Big Data Environment > Membuat semua fungsi local big data environment diantaranya Apache Hive, Apache Spark dan HDFS.
@@ -64,7 +64,7 @@ Selesai langkah diatas akan dihasilkan model rekomendasi film yang siap diuji co
 ### - Evaluation
 Proses selanjutnya kita akan mengevaluasi apakah modeling sudah memberikan hasil yang baik. Data tes yang telah dipartisi akan digunakan untuk mengevaluasi kulaitas dengan node Spark Predictor dan node Spark Numeric Scorer.
 
-![Knime Workflow](Dokumentasi/2/evaluasi.png)
+![Knime Workflow](Dokumentasi/2/evaluasi.PNG)
 
 Langkah-langkah evaluasi :
 1. Spark Predictor (MLlib) > Memprediksi value berdasarkan model yang telah dibuat pada proses modelling
@@ -76,8 +76,8 @@ Jika value sudah mendekati, maka model sudah benar dan siap untuk digunakan seba
 ### - Deployment
 Model yang sudah dievaluasi akan digunakan sebagai prediksi dalam film-film lainya yang belum dirating oleh user. Dengan menggunakan Spark Predictor kita akan memprediksi semua film tersebut dan mengambil 10 film dengan nilai rating tertinggi.
 
-![Knime Workflow](Dokumentasi/2/deploy.png)
-![Knime Workflow](Dokumentasi/2/deploy2.png)
+![Knime Workflow](Dokumentasi/2/deploy.PNG)
+![Knime Workflow](Dokumentasi/2/deploy2.PNG)
 
 Langkah-langkah deployment :
 1. Spark Predictor > Menggabungkan model yang telah dibuat untuk memprediksi rating film yang belum dirating
@@ -89,7 +89,7 @@ Langkah-langkah deployment :
 7. Joiner > Menggabungkan data movies dan hasil rekomendasi user
 8. Display Reccomendation > Menampilkan hasil rekomendasi kepada user
 
-![Knime Workflow](Dokumentasi/2/deploy3.png)
+![Knime Workflow](Dokumentasi/2/deploy3.PNG)
 
 9. Jika ingin output csv maka anda dapat menambahkan node csv writer untuk menyimpan tabel rekomendasi kedalam file csv
 
