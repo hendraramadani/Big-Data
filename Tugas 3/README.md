@@ -24,33 +24,33 @@ Dokumentasi resmi KNIME : [Link here](https://www.knime.com/blog/movie-recommend
 ### - Deployment
 
 ## 3. Perbandingan File Reader dan CSV to Spark 
-    Untuk membandingan kecepatan antara File Reader dan CSV to Spark pada knime kita membutuhkan tambahan komponen yaitu Timer info dan kita harus menggunakan dataset yang sama. Timer info ini berfungsi untuk melihat semua time execution pada Knime Workflow menggunakan variable plots, untuk implementasinya seperti ini
+Untuk membandingan kecepatan antara File Reader dan CSV to Spark pada knime kita membutuhkan tambahan komponen yaitu Timer info dan kita harus menggunakan dataset yang sama. Timer info ini berfungsi untuk melihat semua time execution pada Knime Workflow menggunakan variable plots, untuk implementasinya seperti ini
 
-    - File Reader
+- File Reader
 
-    ![Knime Workflow](Dokumentasi/filereader.png)
+![Knime Workflow](Dokumentasi/filereader.png)
 
-    Setting dataset menggunakan rating.csv
+Setting dataset menggunakan rating.csv
 
-    ![Knime Workflow](Dokumentasi/filereader_option.png)
+![Knime Workflow](Dokumentasi/filereader_option.png)
 
-    - CSV to Spark
+- CSV to Spark
 
-    ![Knime Workflow](Dokumentasi/csvtospark.png)
+![Knime Workflow](Dokumentasi/csvtospark.png)
 
-    Setting dataset menggunakan rating.csv
+Setting dataset menggunakan rating.csv
 
-    ![Knime Workflow](Dokumentasi/csvtospark_option.png)
+![Knime Workflow](Dokumentasi/csvtospark_option.png)
 
-    
-    Untuk hasil perbandingannya kita dapat melihat di Output Table pada Timer Info
 
-    ![Knime Workflow](Dokumentasi/hasilperbandingan.png)
+Untuk hasil perbandingannya kita dapat melihat di Output Table pada Timer Info
 
-    Dari hasil tersebut maka dapat kita mendapatkan data execution time :
-    - File Reader : 96558 milisecond = 96.6 second
-    - Csv to Spark : 26777 milisecond = 26.8 second
+![Knime Workflow](Dokumentasi/hasilperbandingan.png)
 
-    Maka dapat disimpulkan bahwa CSV to Spark lebih cepat waktu execution timenya dibandingkan dengan File Reader untuk case dataset rating.csv
+Dari hasil tersebut maka dapat kita mendapatkan data execution time :
+- File Reader : 96558 milisecond = 96.6 second
+- Csv to Spark : 26777 milisecond = 26.8 second
+
+Maka dapat disimpulkan bahwa CSV to Spark lebih cepat waktu execution timenya dibandingkan dengan File Reader untuk case dataset rating.csv
 
 
