@@ -3,10 +3,13 @@ Dokumentasi resmi KNIME : [Link here](https://www.knime.com/blog/movie-recommend
 
 ## 1. Overview
 
+- Knime Workflow
 ![Knime Workflow](Dokumentasi/1/workflow.PNG)
 
+- Movie Recomendations
 ![Knime Workflow](Dokumentasi/1/recomendation.PNG)
 
+- CSV Export Movie Recomendations
 ![Knime Workflow](Dokumentasi/1/moviecsv.PNG)
 
 ## 2. Crisp-DM Documentation
