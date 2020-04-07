@@ -22,15 +22,15 @@ Pada kali ini kita akan mencoba membuat rekomendasi film bagi user film dengan m
 Dataset yang kita gunakan adalah dataset bawaan dari knime workflow yaitu movies.csv dan rating.csv. 
 
 1. ratings.csv Dataset ratings.csv memiliki 20 juta data rating movie dari 130 ribu user circa yang memiliki 4 kolom dengan keterangan :
-  - movieID : id dari film
-  - userID : id dari user yang telah merating
-  - rating : nilai rating film
-  - timestamp : waktu user menginputkan data rating
+    - movieID : id dari film
+    - userID : id dari user yang telah merating
+    - rating : nilai rating film
+    - timestamp : waktu user menginputkan data rating
 
 2. movies.csv Dataset ini memiliki 27 ribu film dari circa yang memiliki 3 kolom dengan keterangan :
-  - movieID : id dari film
-  - rating : nilai rating film
-  - genre  :  Kategori  film
+    - movieID : id dari film
+    - rating : nilai rating film
+    - genre  :  Kategori  film
 
 ### - Data Preparation
 Awalnya kita akan memberikan id sebuah user misal : 9999 yang akan kita berikan rekomendasi film. Kita akan membuat tabel list movie yang berisikan sudah ditambahkan data user dan timestamp.
