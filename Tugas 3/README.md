@@ -3,11 +3,17 @@ Dokumentasi resmi KNIME : [Link here](https://www.knime.com/blog/movie-recommend
 
 ## 1. Overview
 
+![Knime Workflow](Dokumentasi/1/workflow.PNG)
+
+![Knime Workflow](Dokumentasi/1/recomendation.PNG)
+
+![Knime Workflow](Dokumentasi/1/recomendationcsv.PNG)
 
 ## 2. Crisp-DM Documentation
 
 ### - Business Understanding
-
+Collaborative Filtering adalah algoritma berbasis alternating least squares (ALS) yang digunakan untuk membuat sistem rekomendasi untuk user yang didasarkan pada data-data user lain yang memiliki pola yang mirip.
+Pada kali ini kita akan mencoba membuat rekomendasi film bagi user film dengan menggunakan Collaborative Filtering. Dengan cara mempredikisi setiap data film yang terbagus untuk diambil top 10 untuk dijadikan rekomendasi
 
 ### - Data Understanding
 
