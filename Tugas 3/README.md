@@ -7,7 +7,7 @@ Dokumentasi resmi KNIME : [Link here](https://www.knime.com/blog/movie-recommend
 
 ![Knime Workflow](Dokumentasi/1/recomendation.PNG)
 
-![Knime Workflow](Dokumentasi/1/recomendationcsv.PNG)
+![Knime Workflow](Dokumentasi/1/moviecsv.PNG)
 
 ## 2. Crisp-DM Documentation
 
