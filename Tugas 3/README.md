@@ -28,24 +28,24 @@ Untuk membandingan kecepatan antara File Reader dan CSV to Spark pada knime kita
 
 - File Reader
 
-![Knime Workflow](Dokumentasi/filereader.PNG)
+![Knime Workflow](Dokumentasi/3/filereader.PNG)
 
 Setting dataset menggunakan rating.csv
 
-![Knime Workflow](Dokumentasi/filereader_option.PNG)
+![Knime Workflow](Dokumentasi/3/filereader_option.PNG)
 
 - CSV to Spark
 
-![Knime Workflow](Dokumentasi/csvtospark.PNG)
+![Knime Workflow](Dokumentasi/3/csvtospark.PNG)
 
 Setting dataset menggunakan rating.csv
 
-![Knime Workflow](Dokumentasi/csvtospark_option.PNG)
+![Knime Workflow](Dokumentasi/3/csvtospark_option.PNG)
 
 
 Untuk hasil perbandingannya kita dapat melihat di Output Table pada Timer Info
 
-![Knime Workflow](Dokumentasi/hasilperbandingan.PNG)
+![Knime Workflow](Dokumentasi/3/hasilperbandingan.PNG)
 
 Dari hasil tersebut maka dapat kita mendapatkan data execution time :
 - File Reader  : 96558 milisecond = 96.6 second
