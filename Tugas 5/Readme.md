@@ -1,5 +1,5 @@
 # Tugas 5
-## Hendra Ramadani (05111740000055)
+#### Hendra Ramadani (05111740000055)
 
 # Create Apache Spark Cluster Menggunakan Docker
 
@@ -52,20 +52,20 @@ Perhatikan container ID dari spark_spark_1. Kita akan masuk ke dalam container t
     
 -   Data/file (apabila ada)
 
-#### 100 Partisi (Job)
+#### 100 Partisi 
 Jalankan perintah berikut untuk submit job menghitung nilai Pi. Script contoh ini telah disediakan oleh Apache Spark.
 
-    spark-submit --master spark://172.18.0.4:7077  examples/src/main/python/pi.py  100
+    spark-submit --master spark://172.19.0.4:7077  examples/src/main/python/pi.py  100
 
 Angka 100 menandakan akan menjalankan 100 partisi. 
 
 ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%205/Dokumentasi/22/docker_spark_partition_100.PNG)
 
-#### 1000 Partisi (Job)
+#### 1000 Partisi 
 
 Untuk menjalankan 1000 partisi, tinggal ganti saja parameternya menjadi 1000
 
-    spark-submit --master spark://172.18.0.4:7077  examples/src/main/python/pi.py  1000
+    spark-submit --master spark://172.19.0.4:7077  examples/src/main/python/pi.py  1000
 
 ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%205/Dokumentasi/22/docker_spark_partition_1000.PNG)
 Setelah kedua proses tersebut selesai, kita bisa mengecek laporan prosesnya di `localhost:8080`.
@@ -92,18 +92,18 @@ Lalu, cek perubahan Cores spark cluster menggunakan web UI di port 8080 ([http:/
 
 Setelah itu, buka terminal baru untuk masuk ke dalam container dengan command `docker exec -it <container_id> /bin/bash`.
 
-#### 100 Partisi (Job)
+#### 100 Partisi 
 Setelah itu, jalankan command berikut untuk menjalankan Spark Submit ke Spark Worker.
 
-    spark-submit --master spark://172.18.0.2:7077  examples/src/main/python/pi.py  100
+    spark-submit --master spark://172.19.0.5:7077  examples/src/main/python/pi.py  100
 
 ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%205/Dokumentasi/24/docker_spark_partition_100_24.PNG)
 
-#### 1000 Partisi (Job)
+#### 1000 Partisi 
 
 Ubah parameternya menjadi 1000.
 
-        spark-submit --master spark://172.18.0.2:7077  examples/src/main/python/pi.py  1000
+        spark-submit --master spark://172.19.0.5:7077  examples/src/main/python/pi.py  1000
 
 ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%205/Dokumentasi/24/docker_spark_partition_1000_24.PNG)
 Setelah itu, kita cek hasil prosesnya di `localhost:8080`.
@@ -113,7 +113,7 @@ Untuk menjalankan 100 partisi, dibutuhkan waktu **18 detik**. Sedangkan untuk 10
 
 ## 5 Worker, 2 CPU Cores
 
-Langkah-langkahnya mirip seperti sebelumnya, kita hanya perlu menambahkan worker dan mengganti **SPARK_WOKER_CORES=2**.
+Langkah-langkahnya mirip seperti sebelumnya, kita hanya perlu menambahkan worker sebanyak 5 dan mengganti **SPARK_WOKER_CORES=2**.
 
 ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%205/Dokumentasi/52/docker_compose_52.PNG)
 Lalu jalankan command `docker-compose up` dan tunggu prosesnya sampai selesai. 
@@ -124,18 +124,18 @@ Lalu, cek pertambahan Worker dan perubahan Cores spark cluster menggunakan web U
 
 Setelah itu, buka terminal baru untuk masuk ke dalam container dengan command `docker exec -it <container_id> /bin/bash`.
 
-#### 100 Partisi (Job)
+#### 100 Partisi 
 Setelah itu, jalankan command berikut untuk menjalankan Spark Submit ke Spark Worker.
 
-    spark-submit --master spark://172.18.0.2:7077  examples/src/main/python/pi.py  100
+    spark-submit --master spark://172.19.0.2:7077  examples/src/main/python/pi.py  100
 
 ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%205/Dokumentasi/52/docker_spark_partition_100_52.PNG)
 
-#### 1000 Partisi (Job)
+#### 1000 Partisi 
 
 Ubah parameternya menjadi 1000.
 
-    spark-submit --master spark://172.18.0.2:7077  examples/src/main/python/pi.py  1000
+    spark-submit --master spark://172.19.0.2:7077  examples/src/main/python/pi.py  1000
 
 ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%205/Dokumentasi/52/docker_spark_partition_1000_52.PNG)
 Setelah itu, kita cek hasil prosesnya di `localhost:8080`.
@@ -156,18 +156,18 @@ Lalu, cek perubahan Cores spark cluster menggunakan web UI di port 8080 ([http:/
 
 Setelah itu, buka terminal baru untuk masuk ke dalam container dengan command `docker exec -it <container_id> /bin/bash`.
 
-#### 100 Partisi (Job)
+#### 100 Partisi 
 Setelah itu, jalankan command berikut untuk menjalankan Spark Submit ke Spark Worker.
 
-    spark-submit --master spark://172.18.0.2:7077  examples/src/main/python/pi.py  100
+    spark-submit --master spark://172.19.0.2:7077  examples/src/main/python/pi.py  100
 
 ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%205/Dokumentasi/54/docker_spark_partition_100_54.PNG)
 
-#### 1000 Partisi (Job)
+#### 1000 Partisi 
 
 Ubah parameternya menjadi 1000.
 
-    spark-submit --master spark://172.18.0.2:7077  examples/src/main/python/pi.py  1000
+    spark-submit --master spark://172.19.0.2:7077  examples/src/main/python/pi.py  1000
 
 ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%205/Dokumentasi/54/docker_spark_partition_1000_54.PNG)
 Setelah itu, kita cek hasil prosesnya di `localhost:8080`.
