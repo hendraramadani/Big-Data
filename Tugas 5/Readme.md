@@ -68,7 +68,7 @@ Untuk menjalankan 1000 partisi, tinggal ganti saja parameternya menjadi 1000
     spark-submit --master spark://172.18.0.4:7077  examples/src/main/python/pi.py  1000
 
 ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%205/Dokumentasi/22/docker_spark_partition_1000.PNG)
-Setelah kedua proses tersebut selesai, kita bisa mengecek laporan prosesnya di ([localhost:8080](%28http://localhost:8080%29)).
+Setelah kedua proses tersebut selesai, kita bisa mengecek laporan prosesnya di `localhost:8080`.
 
 ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%205/Dokumentasi/22/docker_spark_execution_time_22.PNG)
 **Keterangan**:
@@ -103,8 +103,10 @@ Setelah itu, jalankan command berikut untuk menjalankan Spark Submit ke Spark Wo
 
 Ubah parameternya menjadi 1000.
 
+        spark-submit --master spark://172.18.0.2:7077  examples/src/main/python/pi.py  1000
+
 ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%205/Dokumentasi/24/docker_spark_partition_1000_24.PNG)
-Setelah itu, kita cek hasil prosesnya di ([localhost:8080](%28http://localhost:8080%29)).
+Setelah itu, kita cek hasil prosesnya di `localhost:8080`.
 
 ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%205/Dokumentasi/24/docker_spark_execution_time_24.PNG)
 Untuk menjalankan 100 partisi, dibutuhkan waktu **18 detik**. Sedangkan untuk 1000 partisi diperlukan waktu **1.6 menit**.
@@ -133,8 +135,10 @@ Setelah itu, jalankan command berikut untuk menjalankan Spark Submit ke Spark Wo
 
 Ubah parameternya menjadi 1000.
 
+    spark-submit --master spark://172.18.0.2:7077  examples/src/main/python/pi.py  1000
+
 ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%205/Dokumentasi/52/docker_spark_partition_1000_52.PNG)
-Setelah itu, kita cek hasil prosesnya di ([localhost:8080](%28http://localhost:8080%29)).
+Setelah itu, kita cek hasil prosesnya di `localhost:8080`.
 
 ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%205/Dokumentasi/52/docker_spark_execution_time.PNG)
 Untuk menjalankan 100 partisi dibutuhkan waktu **1.2 menit**. Sedangkan untuk 1000 partisi diperlukan waktu **1 menit**, disini saya kurang mengerti kenapa 100 partisi lebih lama daripada 1000 partisi, apa mungkin karena performa PC saya lagi menurun atau Processor sedang dalam High Load.
@@ -163,8 +167,10 @@ Setelah itu, jalankan command berikut untuk menjalankan Spark Submit ke Spark Wo
 
 Ubah parameternya menjadi 1000.
 
+    spark-submit --master spark://172.18.0.2:7077  examples/src/main/python/pi.py  1000
+
 ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%205/Dokumentasi/54/docker_spark_partition_1000_54.PNG)
-Setelah itu, kita cek hasil prosesnya di ([localhost:8080](%28http://localhost:8080%29)).
+Setelah itu, kita cek hasil prosesnya di `localhost:8080`.
 
 ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%205/Dokumentasi/54/docker_spark_execution_time.PNG)
 Untuk menjalankan 100 partisi, dibutuhkan waktu **31 detik**. Sedangkan untuk 1000 partisi diperlukan waktu **57 detik**.
