@@ -109,37 +109,16 @@ Setelah itu, kita cek hasil prosesnya di ([localhost:8080](%28http://localhost:8
 ![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%205/Dokumentasi/24/docker_spark_execution_time_24.PNG)
 Untuk menjalankan 100 partisi, dibutuhkan waktu **18 detik**. Sedangkan untuk 1000 partisi diperlukan waktu **1.6 menit**.
 
-## 5 Worker dan 2 CPU Cores
+## 5 Worker, 2 CPU Cores
 
-Langkah-langkahnya mirip seperti sebelumnya, kita hanya perlu menambah worker pada script yml.
+Langkah-langkahnya mirip seperti sebelumnya, kita hanya perlu menambahkan worker dan mengganti **SPARK_WOKER_CORES=2**.
 
-![enter image description here](https://raw.githubusercontent.com/Armunz/big-data/master/tugas5/dokumentasi/5%20worker%202%20cpu/5%20worker%202%20cpu.png)
+![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%205/Dokumentasi/52/docker_compose_52.PNG)
 Lalu jalankan command `docker-compose up` dan tunggu prosesnya sampai selesai. 
 
-Setelah itu, buka terminal baru untuk masuk ke dalam container dengan command `docker exec -it <container_id> /bin/bash`.
+Lalu, cek pertambahan Worker dan perubahan Cores spark cluster menggunakan web UI di port 8080 ([http://localhost:8080](http://localhost:8080))
 
-![enter image description here](https://raw.githubusercontent.com/Armunz/big-data/master/tugas5/dokumentasi/5%20worker%202%20cpu/5%20worker.png)
-#### 100 Partisi (Job)
-Setelah itu, jalankan command berikut untuk menjalankan Spark Submit ke Spark Worker.
-
-    spark-submit --master spark://172.18.0.2:7077  examples/src/main/python/pi.py  100
-
-![enter image description here](https://raw.githubusercontent.com/Armunz/big-data/master/tugas5/dokumentasi/5%20worker%202%20cpu/pi%205%20worker%202%20cpu%20100%20partisi.png)
-#### 1000 Partisi (Job)
-
-Ubah parameternya menjadi 1000.
-
-![enter image description here](https://raw.githubusercontent.com/Armunz/big-data/master/tugas5/dokumentasi/5%20worker%202%20cpu/pi%205%20worker%202%20cpu%201000%20partisi.png)
-Setelah itu, kita cek hasil prosesnya di ([localhost:8080](%28http://localhost:8080%29)).
-
-![enter image description here](https://raw.githubusercontent.com/Armunz/big-data/master/tugas5/dokumentasi/5%20worker%202%20cpu/hasil%205%20worker%202%20cpu.png)
-Untuk menjalankan 100 partisi, dibutuhkan waktu **23 detik**. Sedangkan untuk 1000 partisi diperlukan **1.6 menit**.
-
-## 5 Worker dan 4 CPU Cores
-
-Langkah-langkahnya mirip seperti sebelumnya, kita hanya perlu mengganti **SPARK_WOKER_CORES=4** pada setiap worker.
-
-Lalu jalankan command `docker-compose up` dan tunggu prosesnya sampai selesai. 
+![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%205/Dokumentasi/52/docker_spark_52.PNG)
 
 Setelah itu, buka terminal baru untuk masuk ke dalam container dengan command `docker exec -it <container_id> /bin/bash`.
 
@@ -148,17 +127,47 @@ Setelah itu, jalankan command berikut untuk menjalankan Spark Submit ke Spark Wo
 
     spark-submit --master spark://172.18.0.2:7077  examples/src/main/python/pi.py  100
 
-![enter image description here](https://raw.githubusercontent.com/Armunz/big-data/master/tugas5/dokumentasi/5%20worker%204%20cpu/pi%205%20worker%204%20cpu%20100%20partisi.png)
+![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%205/Dokumentasi/52/docker_spark_partition_100_52.PNG)
 
 #### 1000 Partisi (Job)
 
 Ubah parameternya menjadi 1000.
 
-![enter image description here](https://raw.githubusercontent.com/Armunz/big-data/master/tugas5/dokumentasi/5%20worker%204%20cpu/pi%205%20worker%204%20cpu%201000%20partisi.png)
+![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%205/Dokumentasi/52/docker_spark_partition_1000_52.PNG)
 Setelah itu, kita cek hasil prosesnya di ([localhost:8080](%28http://localhost:8080%29)).
 
-![enter image description here](https://raw.githubusercontent.com/Armunz/big-data/master/tugas5/dokumentasi/5%20worker%204%20cpu/hasil%205%20worker%204%20cpu.png)
-Untuk menjalankan 100 partisi, dibutuhkan waktu **22 detik**. Sedangkan untuk 1000 partisi diperlukan waktu **1.6 menit**.
+![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%205/Dokumentasi/52/docker_spark_execution_time.PNG)
+Untuk menjalankan 100 partisi dibutuhkan waktu **1.2 menit**. Sedangkan untuk 1000 partisi diperlukan waktu **1 menit**, disini saya kurang mengerti kenapa 100 partisi lebih lama daripada 1000 partisi, apa mungkin karena performa PC saya lagi menurun atau Processor sedang dalam High Load.
+
+## 5 Worker, 4 CPU Cores
+
+Langkah-langkahnya mirip seperti sebelumnya, kita hanya perlu mengganti **SPARK_WOKER_CORES=4**.
+
+![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%205/Dokumentasi/54/docker_compose_54.PNG)
+Lalu jalankan command `docker-compose up` dan tunggu prosesnya sampai selesai. 
+
+Lalu, cek perubahan Cores spark cluster menggunakan web UI di port 8080 ([http://localhost:8080](http://localhost:8080))
+
+![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%205/Dokumentasi/54/docker_spark_54.PNG)
+
+Setelah itu, buka terminal baru untuk masuk ke dalam container dengan command `docker exec -it <container_id> /bin/bash`.
+
+#### 100 Partisi (Job)
+Setelah itu, jalankan command berikut untuk menjalankan Spark Submit ke Spark Worker.
+
+    spark-submit --master spark://172.18.0.2:7077  examples/src/main/python/pi.py  100
+
+![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%205/Dokumentasi/54/docker_spark_partition_100_54.PNG)
+
+#### 1000 Partisi (Job)
+
+Ubah parameternya menjadi 1000.
+
+![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%205/Dokumentasi/54/docker_spark_partition_1000_54.PNG)
+Setelah itu, kita cek hasil prosesnya di ([localhost:8080](%28http://localhost:8080%29)).
+
+![enter image description here](https://github.com/hendraramadani/Big-Data/blob/master/Tugas%205/Dokumentasi/54/docker_spark_execution_time.PNG)
+Untuk menjalankan 100 partisi, dibutuhkan waktu **31 detik**. Sedangkan untuk 1000 partisi diperlukan waktu **57 detik**.
 
 ## Kesimpulan
-Semakin banyak Job (Partisi) yang digunakan, maka proses overhead dari map-reduce akan semakin lama, apalagi jika jumlah workernya semakin banyak. Akan tetapi, ketika jumlah workernya diperbanyak dan pada setiap worker diberikan CPU Cores lebih banyak, maka proses komputasinya menjadi semakin tinggi, ini ditunjukkan dengan termakannya jumlah CPU dan RAM yang lebih besar ketika saya menjalankan 5 worker.
+Semakin banyak Job (Partisi) yang digunakan, maka proses overhead dari map-reduce akan semakin lama, berbanding lurus dengan banyak worker yang digunakan. Penggunaan Cores yang tinggi pada setiap worker akan mempercepat setiap komputasi yang dijalankan maka execution time nya juga akan semakin cepat, akan tetapi berbanding lurus dengan resource yang digunakan apabila semakin cepat worker maka resource yang digunakan semakin besar (CPU,RAM,Disk Usage), begitu sebaliknya.
