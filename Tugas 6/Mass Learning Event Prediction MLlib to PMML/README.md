@@ -14,24 +14,27 @@ Pada workflow ini kita menggunakan dataset iris, proses yang mungkin dapat dilak
 Dataset Iris merupakan dataset yang paling terkenal di seluruh dunia yang dibuat oleh R.A. Fisher, karena dataset ini biasa digunakan dalam proses pembelajaran seputar machine learning. Dataset ini isinya tentang 3 macam spesies bunga iris beserta ukuran petal dan sepal.
 
 Atribut dari dataset iris:
-    1. sepal length in cm
-    2. sepal width in cm
-    3. petal length in cm
-    4. petal width in cm
-    5. class:
-        - Iris Setosa
-        - Iris Versicolour
-        - Iris Virginica
+1. sepal length in cm
+2. sepal width in cm
+3. petal length in cm
+4. petal width in cm
+5. class:
+    - Iris Setosa
+    - Iris Versicolour
+    - Iris Virginica
 
 ### Data Preparation
 ![enter image description here](Dokumentasi/dataprep.PNG)
+
 Untuk membaca dataset Iris disini menggunakan _File Reader_, Lalu untuk membuat Local Spark disini Menggunakan _Create Local Big Data Environtment_, Setelah keduanya siap antara Dataset yang dibaca dan Local Spark lalu disini dihubungkan ke _Table to Spark_ untuk mentransfer data dari File Reader Ke dalam dataframe Spark.
 
 ![enter image description here](Dokumentasi/filereader.PNG)
+
 Ini merupakan default configuration _File Reader_ dari workflow tersebut
 Disitu path yang digunakan untuk memanggil dataset iris
 
 ![enter image description here](Dokumentasi/local_big_data.PNG)
+
 Ini merupakan default configuration _Create Local Big Data Environtment_ dari workflow tersebut
 
 Untuk _Table to Spark_ tidak ada konfigurasi khusus
@@ -75,17 +78,21 @@ setelah node _Entropy Scorer_ kita jalankan maka kita dapat melihat hasilnya spe
     - Terakhir, menambahkan node **Container Output (JSON)** untuk memperlihatkan output JSON cluster dari bunga Iris yang dimasukkan pada input
 
 ![enter image description here](Dokumentasi/container_input.PNG)
+
 Untuk konfigurasi node _Container Input (JSON)_ , kita rubah dengan memasukkan 4 variabel atribut dari dataset Iris
 
 ![enter image description here](Dokumentasi/json_table.PNG)
+
 Untuk Konfigurasi node _JSON to Table_
 
 Untuk Konfigurasi node _Compiled Model Predictor_ menggunakan settingan default
 
 ![enter image description here](Dokumentasi/table_josn.PNG)
+
 Untuk Konfigurasi node _Table to JSON_
 
 ![enter image description here](Dokumentasi/container_output.PNG)
+
 Untuk Konfigurasi _Container Output (JSON)_
 
 Setelah kita run node _Container Output (JSON)_ , kita mendapatkan hasil JSON snapshot yang berisi JSON Cluster
