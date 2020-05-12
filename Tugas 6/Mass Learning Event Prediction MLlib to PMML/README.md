@@ -5,8 +5,8 @@
 
 ### Business Understanding
 Pada workflow ini kita menggunakan dataset iris, proses yang mungkin dapat dilakukan dengan dataset ini antara lain:
-    - Mengklasifikasi jenis bunga iris 
-    - Percobaan proses mining
+- Mengklasifikasi jenis bunga iris 
+- Percobaan proses mining
 
 ### Data Understanding
 ![enter image description here](Dokumentasi/iris.PNG)

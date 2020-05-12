@@ -5,8 +5,8 @@
 
 ### Business Understanding
 Pada workflow ini kita menggunakan dataset iris, proses yang mungkin dapat dilakukan dengan dataset ini antara lain:
-    - Mengklasifikasi jenis bunga iris 
-    - Percobaan proses mining
+- Mengklasifikasi jenis bunga iris 
+- Percobaan proses mining
 
 ### Data Understanding
 ![enter image description here](Dokumentasi/iris.PNG)
@@ -88,4 +88,5 @@ Hasil yang didapat dalam confusion Matrix kita mendapatkan accuracy sebesar 94%
 
 ### Deployment
 Pada tahap deploy ment saya menambahkan node _CSV Writer_ Karena pada worflow tidak ada node yang digunakan untuk deployment hasil, dan hasilnya seperti ini
-![enter image description here](Dokumentasi/deployment.PNG)
+
+![enter image description here](Dokumentasi/deploy.PNG)
