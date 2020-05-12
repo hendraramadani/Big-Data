@@ -71,11 +71,11 @@ setelah node _Entropy Scorer_ kita jalankan maka kita dapat melihat hasilnya spe
 ### Deployment
 ![enter image description here](Dokumentasi/deployment.PNG)
 
-    - Untuk deployment, pertama-tama memasukkan inputan JSON variabel bunga Iris yang ingin diklasifikasi dengan menambahkan node **Container Input (JSON)**
-    - Lalu menambahkan node **JSON to Table** untuk mengubah input JSON menjadi tabel multi kolom
-    - Kemudian menambahkan node **Compiled Model Predictor** untuk membuat prediction
-    - Setelah itu menambahkan node **Table to JSON** untuk mengubah kembali tabel multi kolom ke bentuk JSON
-    - Terakhir, menambahkan node **Container Output (JSON)** untuk memperlihatkan output JSON cluster dari bunga Iris yang dimasukkan pada input
+- Untuk deployment, pertama-tama memasukkan inputan JSON variabel bunga Iris yang ingin diklasifikasi dengan menambahkan node **Container Input (JSON)**
+- Lalu menambahkan node **JSON to Table** untuk mengubah input JSON menjadi tabel multi kolom
+- Kemudian menambahkan node **Compiled Model Predictor** untuk membuat prediction
+- Setelah itu menambahkan node **Table to JSON** untuk mengubah kembali tabel multi kolom ke bentuk JSON
+- Terakhir, menambahkan node **Container Output (JSON)** untuk memperlihatkan output JSON cluster dari bunga Iris yang dimasukkan pada input
 
 ![enter image description here](Dokumentasi/container_input.PNG)
 
@@ -87,7 +87,7 @@ Untuk Konfigurasi node _JSON to Table_
 
 Untuk Konfigurasi node _Compiled Model Predictor_ menggunakan settingan default
 
-![enter image description here](Dokumentasi/table_josn.PNG)
+![enter image description here](Dokumentasi/table_json.PNG)
 
 Untuk Konfigurasi node _Table to JSON_
 
