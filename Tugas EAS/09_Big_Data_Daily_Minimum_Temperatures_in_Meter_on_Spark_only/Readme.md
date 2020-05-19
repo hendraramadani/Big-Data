@@ -17,7 +17,7 @@ Data di buka dan di baca menggunakan node **File Reader**
 
 ![enter image description here](Dokumentasi/data_preparation/file_reader.PNG)
 
-![enter image description here](Dokumentasi/data/preparationfile_reader_result.PNG)
+![enter image description here](Dokumentasi/data_preparation/file_reader_result.PNG)
 
 2. Menambahkan Bigdata Environtment
 Digunakan untuk kebutuhan terkait pemrosesan data secara masal
