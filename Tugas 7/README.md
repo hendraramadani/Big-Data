@@ -55,14 +55,14 @@ Data di buka dan di baca menggunakan node **File Reader**
 2. Menambahkan Bigdata Environtment
 Digunakan untuk kebutuhan terkait pemrosesan data secara masal
 
-![enter image description here](Dokumentasi/environtment.JPG)
+![enter image description here](Dokumentasi/environment.JPG)
 
 ## 4. Modeling
 Karena Kebutuhan pengolahan data/ Query data maka untuk step Modeling data akan diubah menjadi format yang lain yaitu dataframe
 
 Pertama Tama kita tambahkan node **Create Local Big Data Environment** ,karena kebutuhan penggunaan spark 
 
-![enter image description here](Dokumentasi/environtment.JPG)
+![enter image description here](Dokumentasi/environment.JPG)
 
 ![enter image description here](Dokumentasi/modeling.JPG)
 
