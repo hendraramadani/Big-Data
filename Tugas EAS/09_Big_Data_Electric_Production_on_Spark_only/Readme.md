@@ -16,10 +16,10 @@
 
 Merupakan dataset yang isinya pencatatan suhu terendah setiap hari
 
-Dataset yang digunakan terdapat 3 attribut utama
+Dataset yang digunakan terdapat 2 attribut utama
 
- - **Date**: Tanggal yang terecord
- - **daily_minimum_temperature**: suhu terendah setiap harinya
+ - **DATE**: Tanggal produksi.
+ - **IPG2211A2N**: Satuan utilitas elektrik dan gas.
 
 # Data Preparation
 

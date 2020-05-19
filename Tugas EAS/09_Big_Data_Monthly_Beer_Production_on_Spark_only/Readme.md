@@ -1,5 +1,5 @@
 # Big Data : Evaluasi Akhir Semester
-# Electric Production
+# Monthly Beer Production
 
 ![enter image description here](Dokumentasi/workflow.PNG)
 
@@ -14,12 +14,12 @@
 # Data Understanding
 ![enter image description here](Dokumentasi/data_understanding/data.PNG)
 
-Merupakan dataset yang isinya pencatatan produksi electric setiap hari
+Merupakan dataset yang isinya pencatatan produksi beer setiap bulan
 
 Dataset yang digunakan terdapat 2 attribut utama
 
- - DATE: Tanggal produksi.
- - IPG2211A2N: Satuan utilitas elektrik dan gas.
+ - **Month**: Bulan Produksi beer
+ - **monthly_beer_production**: Satuan produksi beer setiap bulannya
 
 # Data Preparation
 
@@ -51,7 +51,7 @@ Dataset yang sebelumnya sudah diload ke **File Reader**, akan diload ke HIVE men
 Jadi untuk dataset yang sebelumnya di baca oleh node **FIle Reader** akan di load ke dalam HIVE menggunakan meta node **Load Data** 
 
 Di dalam metanode Load Data, terdapat 2 proses lagi, yaitu **DB Table Creator** dan **DB Loader**.
-Pada node **DB Table Creator**, table HIVE diberi nama **suhu**
+Pada node **DB Table Creator**, table HIVE diberi nama **beer**
 
 ![enter image description here](Dokumentasi/modeling/table_creator.PNG)
 
@@ -109,7 +109,7 @@ Untuk deployment sendiri, data dari step Evaluation akan di deploy ke dalam HIVE
 
 ![enter image description here](Dokumentasi/deployment/spark_to_hive.PNG)
 
-Tabel akan diberi nama **hasil**
+Tabel akan diberi nama **hasil_beer**
 
 ![enter image description here](Dokumentasi/deployment/result.PNG)
 
@@ -117,7 +117,7 @@ Berikut merupakankonfigurasi untuk **Spark to Parquet**
 
 ![enter image description here](Dokumentasi/deployment/spark_to_parquet.PNG)
 
-Untuk hasilnya sendiri akan disimpan pada direktori **/suhu_aggs**. 
+Untuk hasilnya sendiri akan disimpan pada direktori **/beer_aggs**. 
 Berikut adalah hasilnya:
 
 ![enter image description here](Dokumentasi/deployment/parquet_result.PNG)
