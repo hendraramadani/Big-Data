@@ -1,8 +1,6 @@
 ## Big Data Genap 2019/2020
 ## Evaluasi Akhir Semester Genap
 
-# Analisis time series menggunakan KNIME (Apache Spark)
-
 Link Datasets : [https://www.kaggle.com/shenba/time-series-datasets](https://www.kaggle.com/shenba/time-series-datasets)
 
 **Link Dokumentasi**
