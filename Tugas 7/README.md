@@ -4,19 +4,19 @@ Menganalisis Time Series Penggunaan listrik di Irlandia
 
 **Worflow KNIME**
 
-![enter image description here](dokumentasi/workflow.JPG)
+![enter image description here](Dokumentasi/workflow.JPG)
 
 **Extract date-time Attributes**
 
-![enter image description here](dokumentasi/extract.JPG)
+![enter image description here](Dokumentasi/extract.JPG)
 
 **Aggregation and Time Series**
 
-![enter image description here](dokumentasi/aggregation.JPG)
+![enter image description here](Dokumentasi/aggregation.JPG)
 
 **PCA, K-means, Scatter Plot**
 
-![enter image description here](dokumentasi/PCA.PNG)
+![enter image description here](Dokumentasi/PCA.PNG)
 
 ## 1. Business Understanding
 Beberapa proses yang mungkin dapat dilakukan oleh datasets tersebut antara lain:
@@ -34,7 +34,7 @@ Menganalisis kebutuhan Listrik di Irlandia pada jangka waktu tertentu (Time Seri
 
 ## 2. Data Understanding
 
-![enter image description here](dokumentasi/data preparation.JPG)
+![enter image description here](Dokumentasi/data preparation.JPG)
 
 Dataset yang digunakan terdapat 3 attribut utama
 
@@ -48,25 +48,25 @@ Dataset yang digunakan terdapat 3 attribut utama
 Untuk dataset sudah disiapkan sebelumnya `meters_01_50.csv`
 Data di buka dan di baca menggunakan node **File Reader**
 
-![enter image description here](dokumentasi/filereader.JPG)
+![enter image description here](Dokumentasi/filereader.JPG)
 
-![enter image description here](dokumentasi/filereaderconf.JPG)
+![enter image description here](Dokumentasi/filereaderconf.JPG)
 
 2. Menambahkan Bigdata Environtment
 Digunakan untuk kebutuhan terkait pemrosesan data secara masal
 
-![enter image description here](dokumentasi/environtment.JPG)
+![enter image description here](Dokumentasi/environtment.JPG)
 
 ## 4. Modeling
 Karena Kebutuhan pengolahan data/ Query data maka untuk step Modeling data akan diubah menjadi format yang lain yaitu dataframe
 
 Pertama Tama kita tambahkan node **Create Local Big Data Environment** ,karena kebutuhan penggunaan spark 
 
-![enter image description here](dokumentasi/environtment.JPG)
+![enter image description here](Dokumentasi/environtment.JPG)
 
-![enter image description here](dokumentasi/modeling.JPG)
+![enter image description here](Dokumentasi/modeling.JPG)
 
-![enter image description here](dokumentasi/modeling2.JPG)
+![enter image description here](Dokumentasi/modeling2.JPG)
 
 Dataset yang sebelumnya sudah diload ke **File Reader**, akan diload ke HIVE menggunakan metanode **Load Data**.
 Jadi untuk dataset yang sebelumnya di baca oleh node **FIle Reader** akan di load ke dalam HIVE menggunakan meta node **Load Data** 
