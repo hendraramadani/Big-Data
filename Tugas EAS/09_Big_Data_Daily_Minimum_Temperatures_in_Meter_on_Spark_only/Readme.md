@@ -1,7 +1,10 @@
+
+
+
 # Business Understanding
 
 # Data Understanding
-![enter image description here](Dokumentasi/data_preparation.PNG)
+![enter image description here](Dokumentasi/data_understanding/data.PNG)
 
 Dataset yang digunakan terdapat 3 attribut utama
 
@@ -39,9 +42,9 @@ Dataset yang sebelumnya sudah diload ke **File Reader**, akan diload ke HIVE men
 Jadi untuk dataset yang sebelumnya di baca oleh node **FIle Reader** akan di load ke dalam HIVE menggunakan meta node **Load Data** 
 
 Di dalam metanode Load Data, terdapat 2 proses lagi, yaitu **DB Table Creator** dan **DB Loader**.
-Pada node **DB Table Creator**, table HIVE diberi nama meter
+Pada node **DB Table Creator**, table HIVE diberi nama **suhu**
 
-![enter image description here](Dokumentasi/modeling/create_big_data.PNG)
+![enter image description here](Dokumentasi/modeling/table_creator.PNG)
 
 ![enter image description here](Dokumentasi/modeling/input_output.PNG)
 
