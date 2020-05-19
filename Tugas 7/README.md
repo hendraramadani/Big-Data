@@ -33,9 +33,6 @@ Menganalisis kebutuhan Listrik di Irlandia pada jangka waktu tertentu (Time Seri
 -  **Usage by Hour**: Penggunaan Listrik pada jam tertentu.
 
 ## 2. Data Understanding
-
-![enter image description here](Dokumentasi/data preparation.JPG)
-
 Dataset yang digunakan terdapat 3 attribut utama
 
  - **meterID**: id setiap Meteran listrik
