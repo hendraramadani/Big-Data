@@ -1,7 +1,7 @@
 # Business Understanding
 
 # Data Understanding
-![enter image description here](Dokumentasi/data_preparation.JPG)
+![enter image description here](Dokumentasi/data_preparation.PNG)
 
 Dataset yang digunakan terdapat 3 attribut utama
 
@@ -15,14 +15,14 @@ Dataset yang digunakan terdapat 3 attribut utama
 Untuk dataset sudah disiapkan sebelumnya `daily-minimum-temperatures-in-me.csv`
 Data di buka dan di baca menggunakan node **File Reader**
 
-![enter image description here](Dokumentasi/data_preparation/file_reader.JPG)
+![enter image description here](Dokumentasi/data_preparation/file_reader.PNG)
 
-![enter image description here](Dokumentasi/data/preparationfile_reader_result.JPG)
+![enter image description here](Dokumentasi/data/preparationfile_reader_result.PNG)
 
 2. Menambahkan Bigdata Environtment
 Digunakan untuk kebutuhan terkait pemrosesan data secara masal
 
-![enter image description here](Dokumentasi/data_preparation/big_data_env.JPG)
+![enter image description here](Dokumentasi/data_preparation/big_data_env.PNG)
 
 ## 4. Modeling
 Karena Kebutuhan pengolahan data/ Query data maka untuk step Modeling data akan diubah menjadi format yang lain yaitu dataframe
