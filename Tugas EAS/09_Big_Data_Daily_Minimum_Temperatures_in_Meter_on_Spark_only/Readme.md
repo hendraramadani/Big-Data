@@ -24,7 +24,7 @@ Dataset yang digunakan terdapat 3 attribut utama
 # Data Preparation
 
 1. Read 
-Untuk dataset sudah disiapkan sebelumnya `electric-production.csv`
+Untuk dataset sudah disiapkan sebelumnya `daily-minimum-temperatures-in-me.csv`
 Data di buka dan di baca menggunakan node **File Reader**
 
 ![enter image description here](Dokumentasi/data_preparation/file_reader.PNG)
@@ -100,8 +100,6 @@ dan 1 output, yaitu:
 # Evaluation
 Pada proses evaluation ini, kita akan mengimplementasikan business understanding-nya
 
-
-
 # Deployment
 ![enter image description here](Dokumentasi/deployment/deployment.PNG)
 
@@ -109,7 +107,7 @@ Untuk deployment sendiri, data dari step Evaluation akan di deploy ke dalam HIVE
 
 ![enter image description here](Dokumentasi/deployment/spark_to_hive.PNG)
 
-Tabel akan diberi nama **hasil_electric**
+Tabel akan diberi nama **hasil**
 
 ![enter image description here](Dokumentasi/deployment/result.PNG)
 
@@ -117,7 +115,7 @@ Berikut merupakankonfigurasi untuk **Spark to Parquet**
 
 ![enter image description here](Dokumentasi/deployment/spark_to_parquet.PNG)
 
-Untuk hasilnya sendiri akan disimpan pada direktori **/electric_aggs**. 
+Untuk hasilnya sendiri akan disimpan pada direktori **/suhu_aggs**. 
 Berikut adalah hasilnya:
 
 ![enter image description here](Dokumentasi/deployment/parquet_result.PNG)
