@@ -1,7 +1,7 @@
 # Big Data : Evaluasi Akhir Semester
 # Daily Minimum Temperature in Meter
 
-![enter image description here](Dokumentasi/workflow.png)
+![enter image description here](Dokumentasi/workflow.PNG)
 
 ![enter image description here](Dokumentasi/extract.PNG)
 
@@ -117,4 +117,4 @@ Berikut merupakankonfigurasi untuk **Spark to Parquet**
 Untuk hasilnya sendiri akan disimpan pada direktori **/suhu_aggs**. 
 Berikut adalah hasilnya:
 
-![enter image description here](Dokumentasi/Deployment/parquet_result.PNG)
+![enter image description here](Dokumentasi/deployment/parquet_result.PNG)
