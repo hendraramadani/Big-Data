@@ -24,7 +24,7 @@ Dataset yang digunakan terdapat 2 attribut utama
 # Data Preparation
 
 1. Read 
-Untuk dataset sudah disiapkan sebelumnya `daily-minimum-temperatures-in-me.csv`
+Untuk dataset sudah disiapkan sebelumnya `monthly-beer-production-in-austr.csv`
 Data di buka dan di baca menggunakan node **File Reader**
 
 ![enter image description here](Dokumentasi/data_preparation/file_reader.PNG)
