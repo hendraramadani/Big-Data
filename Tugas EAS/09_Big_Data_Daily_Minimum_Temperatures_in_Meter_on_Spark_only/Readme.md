@@ -1,16 +1,25 @@
+# Big Data : Evaluasi Akhir Semester
+# Daily Minimum Temperature in Meter
 
+![enter image description here](Dokumentasi/workflow.png)
 
+![enter image description here](Dokumentasi/extract.PNG)
+
+![enter image description here](Dokumentasi/agregation.PNG)
+
+![enter image description here](Dokumentasi/pca.PNG)
 
 # Business Understanding
 
 # Data Understanding
 ![enter image description here](Dokumentasi/data_understanding/data.PNG)
 
+Merupakan dataset yang isinya pencatatan suhu terendah setiap hari
+
 Dataset yang digunakan terdapat 3 attribut utama
 
- - **meterID**: id setiap Meteran listrik
- - **enc_datetime**: enkripsi dari tanggal
- - **reading**: nilai meter yang tebaca di meteran listrik
+ - **Date**: Tanggal yang terecord
+ - **daily_minimum_temperature**: suhu terendah setiap harinya
 
 # Data Preparation
 
@@ -91,3 +100,21 @@ dan 1 output, yaitu:
 # Evaluation
 
 # Deployment
+![enter image description here](Dokumentasi/deployment/deployment.PNG)
+
+Untuk deployment sendiri, data dari step Evaluation akan di deploy ke dalam HIVE menggunakan **Spark to Hive** dan Parquet menggunakan **Spark to Parquet**, **Spark to Parquet** berfungsi untuk mengubah format data yang awalnya adalah **DataFrame/RDD** menjadi format **file Parquet**, Berikut merupakan konfigurasi dari **Spark to Hive** 
+
+![enter image description here](Dokumentasi/deployment/spark_to_hive.PNG)
+
+Tabel akan diberi nama **hasil**
+
+![enter image description here](Dokumentasi/deployment/result.PNG)
+
+Berikut merupakankonfigurasi untuk **Spark to Parquet**
+
+![enter image description here](Dokumentasi/deployment/spark_to_parquet.PNG)
+
+Untuk hasilnya sendiri akan disimpan pada direktori **/suhu_aggs**. 
+Berikut adalah hasilnya:
+
+![enter image description here](Dokumentasi/Deployment/parquet_result.PNG)
