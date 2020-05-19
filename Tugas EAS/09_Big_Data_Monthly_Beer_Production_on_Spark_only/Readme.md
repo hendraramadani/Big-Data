@@ -10,7 +10,12 @@
 ![enter image description here](Dokumentasi/pca.PNG)
 
 # Business Understanding
+Proses yang dilakukan pada dataset yang digunakan adalah :
 
+Menganalisis rata-rata produksi beer di Australia pada kurun waktu tertentu (time series), dengan mempertimbangkan:
+  - Total Usage: Keseluruhan Produksi Beer dalam satuan waktu Bulan (Dikarenakan semua data unik dan data disajikan dalam format bulanan).
+  - Usage by Year: Produksi Beer per Tahun dalam satuan waktu Bulan.
+  
 # Data Understanding
 ![enter image description here](Dokumentasi/data_understanding/data.PNG)
 

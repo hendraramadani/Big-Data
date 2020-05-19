@@ -10,6 +10,11 @@
 ![enter image description here](Dokumentasi/pca.PNG)
 
 # Business Understanding
+Proses yang dilakukan pada dataset yang digunakan adalah :
+
+Menganalisis rata-rata produksi listrik pada kurun waktu tertentu (time series), dengan mempertimbangkan:
+  - Total Usage: Keseluruhan Produksi Listrik dalam satuan waktu Bulan (Dikarenakan semua data unik dan tidak memiliki ID). Terdapat variable hari namun hanya 1 variasi.
+  - Usage by Year: Produksi Listrik per Tahun dalam satuan waktu Bulan.
 
 # Data Understanding
 ![enter image description here](Dokumentasi/data_understanding/data.PNG)

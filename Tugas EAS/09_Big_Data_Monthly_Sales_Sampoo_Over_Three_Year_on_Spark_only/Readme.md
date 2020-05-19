@@ -10,7 +10,12 @@
 ![enter image description here](Dokumentasi/pca.PNG)
 
 # Business Understanding
+Proses yang dilakukan pada dataset yang digunakan adalah :
 
+Menganalisis rata-rata penjualan shampoo pada kurun waktu tertentu (time series), dengan mempertimbangkan:
+  - Total Usage: Keseluruhan Penjualan Shampoo dalam satuan waktu Bulan (Dikarenakan semua data unik dan tidak memiliki ID).
+  - Usage by Year: Penjualan Shampoo per Tahun dalam satuan waktu Bulan.
+  
 # Data Understanding
 ![enter image description here](Dokumentasi/data_understanding/data.PNG)
 

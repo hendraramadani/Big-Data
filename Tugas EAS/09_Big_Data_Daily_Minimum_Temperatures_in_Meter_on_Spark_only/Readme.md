@@ -10,6 +10,13 @@
 ![enter image description here](Dokumentasi/pca.PNG)
 
 # Business Understanding
+Proses yang dilakukan pada dataset yang digunakan adalah :
+
+Memanfaatkan untuk forecasting, semisal menghitung rata-rata minimum temperatur di Mexico pada tiap-tiap hari dalam kurun waktu tertentu (time series) dengan memperhatikan:
+  - Mean Daily in Total: Rata-rata minimum temperatur pada tiap-tiap hari.
+  - Mean Daily in Week: Rata-rata minimum temperatur pada tiap-tiap hari dalam kurun mingguan.
+  - Mean Daily in Month: Rata-rata minimum temperatur pada tiap-tiap hari dalam kurun bulanan.
+  - Mean Daily in Year: Rata-rata minimum temperatur pada tiap-tiap hari dalam kurun tahunan.
 
 # Data Understanding
 ![enter image description here](Dokumentasi/data_understanding/data.PNG)
