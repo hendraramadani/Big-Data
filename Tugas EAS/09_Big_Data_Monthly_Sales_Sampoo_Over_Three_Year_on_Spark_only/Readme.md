@@ -103,7 +103,68 @@ dan 1 output, yaitu:
  - **kotak hitam** (data yang telah berbentuk DataFrame/RDD)
 
 # Evaluation
-Pada proses evaluation ini, kita akan mengimplementasikan business understanding-nya
+![](Dokumentasi/evaluation/eval.PNG)
+
+- Pada tahap Evaluasi menggunakan komponen-komponen seperti **PCA, K-means, Scatter Plot** untuk menganalisis menggunakan PCA dan K-means kemudian di plot pada tabel menggunakan Scatter Plot
+- Berikut isi dari komponen **PCA, K-means, Scatter Plot**<br>
+![](Dokumentasi/evaluation/pca-mertanode.PNG)
+
+- Pertama-tama melakukan normalisasi menggunakan node **Spark Normalizer**<br>
+![](Dokumentasi/evaluation/pca-normalizer.PNG)
+
+- Kemundian melakukan PCA (**Principal Component Analysis**). Dikarenakan dataset berukukan kecil maka saya menggunakan 100% dari dataset<br>
+![](Dokumentasi/evaluation/pca-pca.PNG)
+
+- Beginilah hasil dari PCA yang telah dilakukan<br>
+![](Dokumentasi/evaluation/pca-pca-result.PNG)
+
+- Lalu untuk pengelompokan cluster mengunakan algoritma K-means dengan node **Spark k-Means**<br>
+![](Dokumentasi/evaluation/pca-kmeans.PNG)
+
+- Dan beginilah hasil dari pengelompokan K-means<br>
+![](Dokumentasi/evaluation/pca-kmeans-result.PNG)
+
+- Tambahkan column filter untuk menampilkan month dan cluster<br>
+![](Dokumentasi/evaluation/pca-columnfilter.PNG)
+
+- Beginilah hasilnya setelah di filter<br>
+![](Dokumentasi/evaluation/pca-columnfilter-result.PNG)
+
+- Setelah itu tambahkan joiner seperti dengan parameter "month"<br>
+![](Dokumentasi/evaluation/pca-join.PNG)
+
+- Dan beginilah hasil setelah menggabungkan **PCA** dan **K-Means**<br>
+![](Dokumentasi/evaluation/pca-join-result.PNG)
+
+- Kemudian tambahkan node **Spark to Table** untuk mengubah data spark menjadi table
+- Setelah itu lakukan denormalisasi untuk membuat table view
+- Lalu tambahkan node **Number to String** untuk keperluan kustomisasi tabel dengan konfigurasi sebagai berikut<br>
+![](Dokumentasi/evaluation/pca-number.PNG)
+
+- Beginilah hasil input untuk kustomisasi tabel<br>
+![](Dokumentasi/evaluation/pca-number-result.PNG)
+
+- Lalu atur warna pada cluster menggunakan node **Color Manager**<br>
+![](Dokumentasi/evaluation/pca-color.PNG)
+
+- Beginilah hasil dari pewarnaan cluster dalam bentuk tabel<br>
+![](Dokumentasi/evaluation/pca-color-result.PNG)
+
+- Kemudian lakukan plotting menggunakan node **Scatter Plot**<br>
+![](Dokumentasi/evaluation/pca-plot.PNG)
+
+- Beginilah hasil dari plotting menggunakan **Scatter Plot**<br>
+![](Dokumentasi/evaluation/pca-plot-result.PNG)
+
+- Setelah itu membuat node **Table View** untuk membuat Aggregated Shampoo Data<br>
+![](Dokumentasi/evaluation/pca-revisi-view-shampoo.PNG)
+
+- Dan beginilah tampilan JavaScript untuk tabel<br>
+![](Dokumentasi/evaluation/pca-revisi-view-shampoo-result.PNG)
+
+- Kemudian pada denormalisasi ubahlah menjadi spark kembali menggunakan **Table to Spark**
+- Menghilangkan underscore pada PCA dimension untuk deployment menggunakan node **Spark Column Rename**<br>
+![](Dokumentasi/evaluation/pca-rename.PNG)
 
 # Deployment
 ![enter image description here](Dokumentasi/deployment/deployment.PNG)
